@@ -279,7 +279,7 @@
         <h3 class="title is-4">Segmentation Comparison</h3>
         <div class="content has-text-justified">
           <p>
-              Use the slider to observe object segmentation results from different view-points of four methods with 5% sparse labels.
+              Use the slider to observe object segmentation results from different view-points of 5 methods. All 3D segmentation models are trained with 5% labels.
           </p>
          </div>
         <div class="column is-vcentered interpolation-panel is-multiline">
@@ -330,18 +330,16 @@
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Editing and Inpainting</h3>
+        <h3 class="title is-4">Scene Editing</h3>
         <div class="content has-text-justified">
           <p>
-            We provide scene editing results of DM-NeRF(as comparison), our object manipulation(as ablation on inpainting) and our full method.  
-            Use the slider here to see the editing results.
+            We provide user-specified scene editing results of DM-NeRF(as comparison), our object manipulation(as ablation on inpainting) and our full method.  
           </p>
         </div>
         <h3 class="title is-4">Translation</h3>
         <div class="content has-text-justified">
           <p>
-            We provide scene editing results of DM-NeRF(as comparison), our object manipulation(as ablation on inpainting) and our full method.  
-            Use the slider here to see the editing results.
+            Use the slider to view results from different translation distance.
           </p>
         </div>
         <div class="column is-multiline is-vcentered interpolation-panel ">
@@ -427,7 +425,7 @@
         <h3 class="title is-4">Erasing</h3>
         <div class="content has-text-justified ">
           <p>
-            We can also animate the scene of erasing the object .Use the button here to see the erasing results.
+            Use the button to view the erasing results.
           </p>
         </div>
         
@@ -522,10 +520,10 @@
           </div> -->
           
         </div> 
-        <h3 class="title is-4">DINO Feature Fields</h3>
+        <h3 class="title is-4">DINO Features</h3>
         <div class="content has-text-justified">
           <p>
-            We visualize feature fields distilled from DINO. Scenes are from Replica and Scannet.
+            We visualize features extracted from DINO using PCA. It can be noted that specular regions can create differences in features from one object plane, causing color segmentation in feature maps.
           </p>
         </div>
         <!--/ DINO. -->
