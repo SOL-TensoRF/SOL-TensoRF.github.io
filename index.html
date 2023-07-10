@@ -66,7 +66,7 @@
               <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washinon.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
@@ -285,10 +285,10 @@
         <div class="column is-vcentered interpolation-panel is-multiline">
           <div class="columns is-centered ">
             <div class="column is-3 is-offset-0 ">
-              <div id="-image-wrapper">
+              <div id="GT-image-wrapper">
                 Loading...
               </div>
-              <p class="has-text-centered has-text-weight-bold is-size-5"> Segmentation</p>
+              <p class="has-text-centered has-text-weight-bold is-size-5">Ground Truth</p>
             </div>
           </div>
           <div class="column interpolation-video-column">
@@ -345,11 +345,10 @@
         <div class="column is-multiline is-vcentered interpolation-panel ">
           <div class="columns is-vcentered interpolation-panel ">
             <div class="column is-3 has-text-centered">
-<!--               <p class="is-size-5 has-text-centered has-text-weight-bold"></p> -->
+              <p class="is-size-5 has-text-centered has-text-weight-bold">Ground Truth</p>
               <img src="./static/editing/gt.png"
                   alt="GT-image"
                   class="image "/>
-              <p class="is-size-5 has-text-centered has-text-weight-bold">GT</p>
             </div>
             <!-- <div class="column is-3 has-text-centered">
               <p class="is-size-5 has-text-centered has-text-weight-bold ">DM-NeRF</p>
@@ -385,10 +384,10 @@
         <div class="column is-multiline is-vcentered interpolation-panel ">
           <div class="columns is-vcentered interpolation-panel ">
             <div class="column is-3 has-text-centered">
+              <p class="is-size-5 has-text-centered has-text-weight-bold">Ground Truth</p>
               <img src="./static/editing/gt_room0.png"
                   alt="GT-image"
                   class="image "/>
-              <p class="is-size-5 has-text-centered has-text-weight-bold">GT</p>
             </div>
             <!-- <div class="column is-3 has-text-centered">
               <p class="is-size-5 has-text-centered has-text-weight-bold ">DM-NeRF</p>
@@ -437,7 +436,7 @@
             <img src="./static/editing/38_rgb_gt.png"
                  alt="GT-image"
                  class="image is-512x512"/>
-            <p class="is-size-5 has-text-centered has-text-weight-bold">GT</p>
+            <p class="is-size-5 has-text-centered has-text-weight-bold">Ground Truth</p>
           </div>
           <div class="column is-8 has-text-centered">
             
@@ -483,7 +482,7 @@
             <img src="./static/editing/7_rgb_gt.png"
                  alt="GT-image"
                  class="image is-512x512"/>
-            <p class="is-size-5 has-text-centered has-text-weight-bold">GT</p>
+            <p class="is-size-5 has-text-centered has-text-weight-bold">Ground Truth</p>
           </div>
           <div class="column is-8 has-text-centered">
             
@@ -550,13 +549,13 @@
         </div>
         <div class="columns is-centered is-multiline">
           <div class="column is-4">
-            <p class="has-text-centered has-text-weight-bold is-size-5">GT Mesh</p>
+            <p class="has-text-centered has-text-weight-bold is-size-5">Ground Truth</p>
           </div>
           <div class="column is-4">
-            <p class="has-text-centered has-text-weight-bold is-size-5">Mesh w/ SDF</p>
+            <p class="has-text-centered has-text-weight-bold is-size-5">w/ SDF</p>
           </div>
           <div class="column is-4">
-            <p class="has-text-centered has-text-weight-bold is-size-5">Mesh w/o SDF</p>
+            <p class="has-text-centered has-text-weight-bold is-size-5">w/o SDF</p>
           </div>
         </div>
         <input class="slider is-full-width is-large is-info"
@@ -583,13 +582,13 @@
               <img src="./static/ablation/rgb_627.png"
                  alt="DINO-image"
                  class="image is-512x512"/>
-              <p class="has-text-centered has-text-weight-bold is-size-5">GT RGB</p>
+              <p class="has-text-centered has-text-weight-bold is-size-5">RGB Ground Truth</p>
             </div>
             <div class="column is-3 is-offset-0 ">
               <img src="./static/ablation/remap_vis_sem_instance_627.png"
                  alt="DINO-image"
                  class="image is-512x512"/>
-              <p class="has-text-centered has-text-weight-bold is-size-5">GT Segmentation</p>
+              <p class="has-text-centered has-text-weight-bold is-size-5">Segmentation Ground Truth</p>
             </div>
           </div>
           <div class="column interpolation-video-column">
@@ -642,85 +641,59 @@
           </p>
         </div>
         <!--/ DINO. -->
-        <div class="columns is-centered">
+        <div class="columns is-centered ">
           <div class="column is-3">
-            <h5 class="title is-6 is-center">GT RGB</h5>
+            <p class=" has-text-weight-bold is-size-5">GT RGB</p>
+          </div>
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">DINO Features</p>
+          </div>
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">GT RGB</p>
+          </div>
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">DINO Features</p>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-6">
             <div class="content">
               
-              <img src="./static/dino/019999_100.png"
+              <img src="./static/dino/019999_100_full.png"
                alt="DINO-image"
                class="image is-512x512"/>
             </div>
         </div>
         
-        <div class="column is-3">
-          <h5 class="title is-6 is-center">DINO Features</h5>
+        <div class="column is-6">
           <div class="content">
-            <img src="./static/dino/029999_115.png"
+            <img src="./static/dino/029999_115_full.png"
                alt="DINO-image"
                class="image is-512x512"/>
           </div>
         </div>
-          <div class="column is-3">
-            <h5 class="title is-6 is-center">GT RGB</h5>
-            <div class="content">
-              <img src="./static/dino/019999_007.jpg"
-                 alt="DINO-image"
-                 class="image is-512x512"/>
-            </div>
-          </div> 
-          <!--/ Visual Effects. -->
-          
-          <div class="column is-3">
-            <h5 class="title is-6 is-center">DINO Features</h5>
-            <div class="content">
-              <img src="./static/dino/019999_074.jpg"
-                  alt="DINO-image"
-                  class="image is-512x512"/>
-            </div>
-          </div>  
+         
           <!-- Matting. -->
           
-          
-    
         </div>
         <div class="columns is-centered">
-          <div class="column is-3">
+          <div class="column is-6">
 <!--             <h5 class="title is-6 is-center"></h5> -->
             <div class="content">
-              
-              <img src="./static/dino/019999_100_dino.png"
+              <img src="./static/dino/019999_007_full.png"
                alt="DINO-image"
                class="image is-512x512"/>
             </div>
         </div>
         
-        <div class="column is-3">
+        <div class="column is-6">
 <!--           <h5 class="title is-6 is-center"></h5> -->
           <div class="content">
-            <img src="./static/dino/029999_115_dino.png"
+            <img src="./static/dino/019999_074_full.png"
                alt="DINO-image"
                class="image is-512x512"/>
           </div>
         </div>
-          <div class="column is-3">
-<!--             <h5 class="title is-6 is-center"></h5> -->
-            <div class="content">
-              <img src="./static/dino/019999_007_dino.png"
-                 alt="DINO-image"
-                 class="image is-512x512"/>
-            </div>
-          </div> 
-          <!--/ Visual Effects. -->
-          <div class="column is-3">
-<!--             <h5 class="title is-6 is-center"></h5> -->
-            <div class="content">
-              <img src="./static/dino/019999_074_dino.png"
-                 alt="DINO-image"
-                 class="image is-512x512"/>
-            </div>
-          </div> 
-          <!-- Matting. -->
           
           
     
@@ -733,9 +706,22 @@
             We visualize feature fields distilled from DINO.
           </p>
         </div> -->
+        <div class="columns is-centered ">
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">GT RGB</p>
+          </div>
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">DINO Features</p>
+          </div>
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">GT RGB</p>
+          </div>
+          <div class="column is-3">
+            <p class=" has-text-weight-bold is-size-5">DINO Features</p>
+          </div>
+        </div>
         <div class="columns is-centered">
           <div class="column is-3">
-            <h5 class="title is-6 is-center">GT RGB</h5>
             <div class="content">
               <video width="320" height="240" autoplay muted loop playsinline height="70%">
                 <source src="./static/dino/office0_rgb.mp4" type="video/mp4">
@@ -746,7 +732,6 @@
     
           <!-- Matting. -->
           <div class="column is-3">
-              <h5 class="title is-6 is-center">DINO Features</h5>
               <div class="content">
                 
                 <video width="320" height="240" autoplay muted loop playsinline height="70%">
@@ -756,7 +741,6 @@
           </div>
           
           <div class="column is-3">
-            <h5 class="title is-6 is-center">GT RGB</h5>
             <div class="content">
               <video width="320" height="240" autoplay muted loop playsinline height="70%">
                 <source src="./static/dino/office2_rgb.mp4" type="video/mp4">
@@ -765,7 +749,7 @@
           </div>
           
           <div class="column is-3">
-            <h5 class="title is-6 is-center">DINO Features</h5>
+
             <div class="content">
               <video width="320" height="240" autoplay muted loop playsinline height="70%">
                 <source src="./static/dino/office2_dino.mp4" type="video/mp4">
